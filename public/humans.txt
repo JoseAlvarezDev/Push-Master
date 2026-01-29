@@ -1,0 +1,34 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Developer: Jose Alvarez
+    Site: https://github.com/josealvarezdev
+    Location: Spain
+
+# THANKS
+
+    Pusher Beams for the notification infrastructure
+    The open source community
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JavaScript
+    Pusher Beams API
+    Google Fonts (Inter)
+    Progressive Web App (PWA)
+    
+# STANDARDS
+
+    Semantic HTML5
+    CSS3 with Glassmorphism
+    Accessibility (ARIA)
+    Responsive Design
+    SEO Optimized
+    
+# LICENSE
+
+    MIT License
+    Copyright (c) 2026 Jose Alvarez
+    https://josealvarezdev.github.io/Push-Master/license.html

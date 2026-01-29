@@ -1,0 +1,129 @@
+# Push Master
+
+> Professional push notification management powered by Pusher Beams
+
+## Overview
+
+Push Master is a modern web application for managing and sending push notifications across multiple platforms (iOS, Android, Web) using the Pusher Beams API.
+
+## Key Features
+
+- **Multi-platform Notifications**: Send push notifications to iOS (APNS), Android (FCM), and Web
+- **Rich Notifications**: Support for titles, body text, emoji reactions, and image attachments
+- **Notification History**: View and manage all sent notifications with timestamps
+- **Interest-based Targeting**: Send notifications to specific topics/interests
+- **Real-time Delivery**: Powered by Pusher Beams for instant, reliable delivery
+- **Image Upload**: Attach images via URL or local file upload
+- **Modern UI**: Glassmorphism design with smooth animations
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile
+- **PWA Support**: Progressive Web App capabilities
+
+## Technology Stack
+
+- **Frontend**: HTML5, CSS3 (Glassmorphism), Vanilla JavaScript
+- **Backend**: Node.js, Express.js
+- **Push Service**: Pusher Beams API
+- **Security**: Helmet.js, Rate Limiting, Input Validation, XSS Protection
+- **File Upload**: Multer with validation
+- **Validation**: Validator.js library
+
+## API Endpoints
+
+### GET /api/config
+Returns the Pusher instance ID for client initialization.
+
+### POST /api/send
+Send a push notification.
+- **Body**: `{ title, body, interest, image? }`
+- **File Upload**: Optional image file
+- **Validation**: Title (max 100 chars), Body (max 500 chars), Interest (alphanumeric + hyphens)
+- **Rate Limit**: 100 requests per 15 minutes
+
+### GET /api/history
+Retrieve notification history (last 20 notifications).
+
+### DELETE /api/history/:id
+Delete a specific notification from history.
+
+## Security Features
+
+- Environment variable protection for API keys
+- Server-side and client-side input validation
+- XSS protection with HTML escaping
+- Content Security Policy (CSP) via Helmet.js
+- Rate limiting on send endpoint
+- File upload validation (type, size, mimetype)
+- CORS configuration
+
+## Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Configure environment variables
+cp .env.example .env
+# Edit .env with your Pusher Beams credentials
+
+# Start server
+npm start
+```
+
+## Environment Variables
+
+- `PORT`: Server port (default: 3000)
+- `PUSHER_INSTANCE_ID`: Your Pusher Beams instance ID
+- `PUSHER_SECRET_KEY`: Your Pusher Beams secret key
+- `ALLOWED_ORIGINS`: Comma-separated list of allowed CORS origins
+
+## Usage
+
+1. **Subscribe to Interest**: Users automatically subscribe to the "hello" interest
+2. **Send Notification**: Fill in the form with title, message, and optional image
+3. **View History**: Check the history page for all sent notifications
+4. **Manage Notifications**: Delete individual notifications from history
+
+## Project Structure
+
+```
+├── public/
+│   ├── index.html          # Main dashboard
+│   ├── history.html        # Notification history page
+│   ├── license.html        # MIT license page
+│   ├── app.js              # Client-side JavaScript
+│   ├── style.css           # Styles with glassmorphism
+│   ├── logo.png            # Application logo
+│   ├── manifest.json       # PWA manifest
+│   ├── robots.txt          # Search engine directives
+│   ├── sitemap.xml         # XML sitemap
+│   └── humans.txt          # Developer attribution
+├── server.js               # Express server
+├── .env.example            # Environment variables template
+└── package.json            # Dependencies
+```
+
+## License
+
+MIT License - See [license.html](https://josealvarezdev.github.io/Push-Master/license.html)
+
+## Author
+
+**Jose Alvarez**
+- GitHub: [@josealvarezdev](https://github.com/josealvarezdev)
+- Website: [josealvarezdev.github.io/Push-Master](https://josealvarezdev.github.io/Push-Master/)
+
+## Powered By
+
+[Pusher Beams](https://pusher.com/beams) - Reliable push notification infrastructure
+
+## SEO & Discoverability
+
+This application is optimized for:
+- Search engines (Google, Bing)
+- AI assistants (ChatGPT, Claude, Gemini, DeepSeek, Le Chat)
+- Social media sharing (Open Graph, Twitter Cards)
+- Progressive Web App installation
+
+## Contact
+
+For questions or support, visit the [GitHub repository](https://github.com/josealvarezdev).

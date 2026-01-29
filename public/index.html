@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Push Master | Pusher Beams</title>
+        <meta
+            name="description"
+            content="Push Master - Professional push notification management powered by Pusher Beams. Send instant notifications, manage history, and engage your users effectively."
+        />
+        <meta
+            name="keywords"
+            content="push notifications, pusher beams, notificaciones push, ios, android, web, dashboard, notification management, instant notifications, user engagement"
+        />
+        <meta name="author" content="Jose Alvarez" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://josealvarezdev.github.io/Push-Master/" />
+
+        <!-- Language and Locale -->
+        <meta name="language" content="Spanish" />
+        <meta http-equiv="content-language" content="es" />
+
+        <!-- Open Graph / Social Media -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://josealvarezdev.github.io/Push-Master/" />
+        <meta
+            property="og:title"
+            content="Push Master | Professional Push Notification Management"
+        />
+        <meta
+            property="og:description"
+            content="Dashboard moderno para enviar notificaciones push multiplataforma a iOS, Android y Web con Pusher Beams"
+        />
+        <meta property="og:image" content="https://josealvarezdev.github.io/Push-Master/logo.png" />
+        <meta property="og:site_name" content="Push Master" />
+        <meta property="og:locale" content="es_ES" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://josealvarezdev.github.io/Push-Master/" />
+        <meta
+            name="twitter:title"
+            content="Push Master | Professional Push Notification Management"
+        />
+        <meta
+            name="twitter:description"
+            content="Dashboard moderno para enviar notificaciones push multiplataforma"
+        />
+        <meta
+            name="twitter:image"
+            content="https://josealvarezdev.github.io/Push-Master/logo.png"
+        />
+        <meta name="twitter:creator" content="@josealvarezdev" />
+
+        <!-- AI-Specific Meta Tags (ChatGPT, Claude, Gemini, DeepSeek, Le Chat) -->
+        <meta name="ai:title" content="Push Master - Push Notification Management Application" />
+        <meta
+            name="ai:description"
+            content="A web application for managing push notifications using Pusher Beams API. Features include sending notifications with title, body, emoji reactions, and image attachments, viewing notification history, and managing sent notifications."
+        />
+        <meta name="ai:type" content="WebApplication" />
+        <meta
+            name="ai:features"
+            content="Push Notifications, Notification History, Emoji Reactions, Image Attachments, Real-time Delivery, Pusher Beams Integration"
+        />
+        <meta
+            name="ai:technology"
+            content="Pusher Beams, JavaScript, HTML5, CSS3, Progressive Web App"
+        />
+
+        <!-- PWA -->
+        <link rel="manifest" href="manifest.json" />
+        <meta name="theme-color" content="#6366f1" />
+        <link rel="apple-touch-icon" href="logo.png" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="/logo.png" />
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Structured Data (JSON-LD) for Search Engines and AI -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebApplication",
+                "name": "Push Master",
+                "description": "Professional push notification management powered by Pusher Beams",
+                "url": "https://josealvarezdev.github.io/Push-Master/",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web Browser",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "Jose Alvarez",
+                    "url": "https://github.com/josealvarezdev"
+                },
+                "featureList": [
+                    "Send push notifications",
+                    "Manage notification history",
+                    "Add emoji reactions",
+                    "Attach images to notifications",
+                    "Real-time delivery via Pusher Beams"
+                ]
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="splash-screen">
+            <div class="splash-content">
+                <img src="logo.png" alt="Push Master Logo" class="splash-logo" />
+                <div class="splash-loader"></div>
+                <h1 class="splash-title">Push Master</h1>
+            </div>
+            <div class="splash-footer">
+                <div class="powered-by">
+                    Powered by
+                    <a href="https://pusher.com/beams" target="_blank" rel="noopener noreferrer"
+                        >Pusher Beams</a
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="background-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <nav class="top-navigation">
+            <div class="brand-top">
+                <img src="logo.png" alt="Push Master Logo" class="nav-logo" />
+                <span class="nav-title">Push Master</span>
+            </div>
+            <div class="nav-actions-top">
+                <a
+                    href="history.html"
+                    target="_blank"
+                    class="nav-btn-top"
+                    title="Ver Historial Completo"
+                >
+                    <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>History</span>
+                </a>
+                <a
+                    href="https://github.com/josealvarezdev"
+                    target="_blank"
+                    class="nav-btn-top github-btn"
+                    title="Ver repositorio en GitHub"
+                >
+                    <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                        ></path>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+                <a
+                    href="https://ko-fi.com/josealvarezdev"
+                    target="_blank"
+                    class="nav-btn-top kofi-btn"
+                    title="Apóyame en Ko-fi"
+                >
+                    <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                        <line x1="6" y1="1" x2="6" y2="4"></line>
+                        <line x1="10" y1="1" x2="10" y2="4"></line>
+                        <line x1="14" y1="1" x2="14" y2="4"></line>
+                    </svg>
+                    <span>Ko-fi</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="dashboard-container">
+            <main>
+                <div class="glass-card">
+                    <div class="form-header">
+                        <h2>Nueva Notificación</h2>
+                        <p>Configura y envía un mensaje push instantáneo</p>
+                    </div>
+
+                    <form id="push-form">
+                        <div class="input-group">
+                            <label for="interest">Interés (Topic)</label>
+                            <input
+                                type="text"
+                                id="interest"
+                                placeholder="ej: anuncios-globales"
+                                required
+                            />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="title">Título de la Notificación</label>
+                            <div class="input-with-counter">
+                                <input
+                                    type="text"
+                                    id="title"
+                                    placeholder="¡Hola a todos!"
+                                    required
+                                    maxlength="100"
+                                />
+                                <span class="char-counter" id="title-counter">0/100</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="imageFile">O carga una imagen local</label>
+                            <input type="file" id="imageFile" accept="image/*" />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="body">Mensaje</label>
+                            <div class="emoji-bar">
+                                <span
+                                    class="emoji-btn"
+                                    data-emoji="🚀"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-label="Insertar emoji cohete"
+                                    >🚀</span
+                                >
+                                <span
+                                    class="emoji-btn"
+                                    data-emoji="🔥"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-label="Insertar emoji fuego"
+                                    >🔥</span
+                                >
+                                <span
+                                    class="emoji-btn"
+                                    data-emoji="🔔"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-label="Insertar emoji campana"
+                                    >🔔</span
+                                >
+                                <span
+                                    class="emoji-btn"
+                                    data-emoji="✨"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-label="Insertar emoji estrellas"
+                                    >✨</span
+                                >
+                                <span
+                                    class="emoji-btn"
+                                    data-emoji="💻"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-label="Insertar emoji computadora"
+                                    >💻</span
+                                >
+                                <span
+                                    class="emoji-btn"
+                                    data-emoji="🎉"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-label="Insertar emoji celebración"
+                                    >🎉</span
+                                >
+                            </div>
+                            <div class="input-with-counter">
+                                <textarea
+                                    id="body"
+                                    rows="4"
+                                    placeholder="Escribe el contenido de la push aquí..."
+                                    required
+                                    maxlength="500"
+                                ></textarea>
+                                <span class="char-counter" id="body-counter">0/500</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="submit-btn">
+                            <span>Enviar Notificación</span>
+                            <div class="loader" id="loader"></div>
+                        </button>
+                    </form>
+
+                    <div id="status-message" class="hidden"></div>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <span class="copyright">&copy; 2026 Push Master</span>
+                <span class="footer-separator">|</span>
+                <span class="author">Jose Alvarez Dev</span>
+                <span class="footer-separator">|</span>
+                <a href="license.html" target="_blank" rel="noopener noreferrer" class="footer-link"
+                    >License MIT</a
+                >
+                <span class="footer-separator">|</span>
+                <span class="powered-by"
+                    >Powered by
+                    <a href="https://pusher.com/beams" target="_blank" rel="noopener noreferrer"
+                        >Pusher Beams</a
+                    ></span
+                >
+            </div>
+        </footer>
+
+        <script src="https://js.pusher.com/beams/1.0/push-notifications-cdn.js"></script>
+        <script src="config.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
