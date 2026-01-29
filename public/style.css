@@ -152,6 +152,7 @@ body {
 }
 
 @keyframes pulse {
+
     0%,
     100% {
         transform: scale(1);
@@ -454,6 +455,7 @@ main {
 }
 
 @keyframes neon-pulse {
+
     0%,
     100% {
         box-shadow: 0 0 5px rgba(34, 197, 94, 0.2);
@@ -487,6 +489,22 @@ main {
     .top-navigation {
         padding: 20px;
         position: relative;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .brand-top {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-actions-top {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        gap: 8px;
     }
 
     .dashboard-container {
@@ -506,6 +524,11 @@ main {
 
     .nav-btn-top {
         padding: 8px;
+        min-width: auto;
+    }
+
+    .nav-actions-top {
+        gap: 6px;
     }
 }
 
@@ -667,12 +690,13 @@ input[type='file']::-webkit-file-upload-button:hover {
     border-radius: 4px;
 }
 
-textarea + .char-counter {
+textarea+.char-counter {
     bottom: 12px;
 }
 
 /* Accessibility - Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
